@@ -17,3 +17,7 @@ A chatbot for discord channels using gpt-4
 - Host or run locally via npm
 - Find the custom URL from your discord chatbot interface
 - Invite to your channel
+
+## Possible use in a discord server
+
+![chatbot](https://media.discordapp.net/attachments/893948832457580578/1163902657606471680/image.png?ex=654143d1&is=652eced1&hm=c300587d0dbfa7e540b8a0129536edaed758d3710ea49e369349bd39bd7bb720&=&width=2159&height=995)
