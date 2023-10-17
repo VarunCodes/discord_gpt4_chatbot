@@ -10,9 +10,10 @@ client.on('ready', () => {
     console.log('The bot is online.')
 })
 
-const IGNORE_PREFIX = "!";
+const IGNORE_PREFIX = "!"; // chatbot will ignore messages with this prefix
 const CHANNELS = ['']; // discord channel id's
-const prompt = 'ChatGPT is a friendly chatbot'
+const prompt = 'ChatGPT is a friendly chatbot' // define your prompt
+const chatgpt_model = 'gpt-4' // can change to experimental/older models
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_KEY,
@@ -65,7 +66,7 @@ client.on('messageCreate', async (message) => {
 
     const response = await openai.chat.completions
         .create({
-            model: 'gpt-4', // can change to experimental/older models
+            model: chatgpt_model, 
             messages: conversation,
         }).catch((error) => console.error('OpenAI Error:\n', error));
 
